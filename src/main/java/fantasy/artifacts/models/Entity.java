@@ -1,6 +1,6 @@
-package my.artifacts.models;
+package fantasy.artifacts.models;
 
-import my.artifacts.models.abstractions.IEntity;
+import fantasy.artifacts.models.abstractions.IEntity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

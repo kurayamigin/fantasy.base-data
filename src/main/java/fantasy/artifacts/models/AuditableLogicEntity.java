@@ -1,11 +1,12 @@
-package my.artifacts.models;
+package fantasy.artifacts.models;
 
-import my.artifacts.models.abstractions.ILogicEntity;
+import fantasy.artifacts.models.abstractions.IAuditableEntity;
+import fantasy.artifacts.models.abstractions.ILogicEntity;
 
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public abstract class LogicEntity<TKey> extends Entity<TKey> implements ILogicEntity<TKey> {
+public abstract class AuditableLogicEntity<TKey> extends AuditableEntity<TKey> implements IAuditableEntity<TKey>, ILogicEntity<TKey> {
     private boolean active = true;
 
     public boolean isActive() {

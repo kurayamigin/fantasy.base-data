@@ -1,12 +1,10 @@
-package my.artifacts.models;
+package fantasy.artifacts.models;
 
-import my.artifacts.models.abstractions.IAuditableEntity;
+import fantasy.artifacts.models.abstractions.IAuditableEntity;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
-import java.time.Instant;
 import java.time.OffsetDateTime;
-import java.util.Date;
 
 @MappedSuperclass
 public abstract class AuditableEntity<TKey> extends Entity<TKey> implements IAuditableEntity<TKey> {

@@ -1,24 +1,34 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>my.artifacts</groupId>
-  <artifactId>base-data</artifactId>
+  <groupId>com.github.kurayamigin</groupId>
+  <artifactId>base-persistence</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>8</source>
-          <target>8</target>
+          <source>11</source>
+          <target>11</target>
         </configuration>
       </plugin>
     </plugins>
   </build>
-  <name>base-data</name>
+  <name>base-persistence</name>
   <url>http://maven.apache.org</url>
+
+  <!-- Repository configuration -->
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/kurayamigin/fantasy-artifacts</url>
+    </repository>
+  </distributionManagement>
+
 
   <dependencies>
     <dependency>

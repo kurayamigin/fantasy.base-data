@@ -1,4 +1,4 @@
-package my.artifacts.models.abstractions;
+package fantasy.artifacts.models.abstractions;
 
 public interface ILogicEntity<TKey> {
     boolean isActive();

@@ -1,4 +1,4 @@
-package my.artifacts.models.abstractions;
+package fantasy.artifacts.models.abstractions;
 
 import java.sql.Timestamp;
 import java.time.OffsetDateTime;
